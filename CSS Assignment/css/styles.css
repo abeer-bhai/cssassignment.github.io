@@ -1,0 +1,95 @@
+/*Formatings to be applied in each case*/
+
+body{
+  background-color: #98e698;
+}
+
+.menu-heading{
+  text-align: center;
+  margin: 2rem auto 3rem;
+  font-size: 2.5rem;
+}
+
+.col{
+  border-style: solid;
+  border-width: thin;
+  border-radius: 0.5rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.col-head{
+  margin: 0 0 0 auto;
+  width: 10rem;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #ebebe0;
+  border-style: solid;
+  border-radius: 0.5rem;
+  border-width: thin;
+  opacity: 0.8;
+}
+
+p{
+  margin: 10% 3% 2%;
+  font: 1.1rem;
+  background-color: #ebebe0;
+  opacity: 0.8;
+  border-radius: 0.5rem;
+  line-height: 1.6;
+  padding: 0.5% 1%;
+}
+
+.chicken-menu{
+  background-image: url("https://st.depositphotos.com/2252541/2379/i/950/depositphotos_23796047-stock-photo-butter-chicken.jpg");
+}
+
+.beef-menu{
+  background-image: url("https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/eazytrendz%2F1570%2Ftrend20170901052238.jpg");
+}
+
+.sushi-menu{
+  background-image: url("https://i8b2m3d9.stackpathcdn.com/wp-content/uploads/2019/07/Take-away-sushi-rolls_3781NM.jpg");
+}
+
+/* Formatings to be applied when on desktop */
+@media only screen and (min-width:992px) {
+  .col{
+    width: 30%;
+    float: left;
+    margin-left: 1%;
+    margin-right: 2%;
+  }
+}
+
+/*Formatings to be applied on tablet*/
+
+@media only screen and (max-width:991px) and (min-width:660px) {
+  .chicken-menu, .beef-menu{
+    width: 45%;
+    float: left;
+    margin-left: 1%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+  }
+
+  .sushi-menu{
+    float: left;
+    width: 93%;
+    margin-left: 1%;
+    margin-right: 2%;
+  }
+}
+
+/* Formatings to be applied on mobile */
+
+@media only screen and (max-width: 659px) {
+  .col{
+    width: 80%;
+    float: left;
+    margin: 3% auto;
+  }
+  .beef-menu, .chicken-menu, .sushi-menu{
+    background-repeat: repeat-y;
+  }
+}
